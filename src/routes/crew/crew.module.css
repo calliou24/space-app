@@ -1,0 +1,105 @@
+.crew { 
+    background-image: url(./../../assets/crew/background-crew-desktop.jpg);
+    position: relative;
+    overflow-y: hidden;
+}
+.dotsNav { 
+    position: absolute;
+    z-index: 2000;
+    bottom:20px;
+    left: 80px;
+    width: 120px;
+    height:fit-content;
+}
+
+.dotsNav > ul  {
+    padding: 0;
+    list-style: none ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nonSelected {
+    color:#fff5;
+    font-size: .7rem;
+}
+.nonSelected:hover {
+    color:#fff9;
+    font-size: .7rem;
+}
+
+.selectedDot { 
+    color:var(--white);
+    font-size: .8rem;
+}
+
+.outlet {
+    position: relative;
+    top: 20px;
+    width: 90%;
+    height: 400px;
+    margin: auto;
+}
+
+@media screen and (max-width : 1000px) {
+    .crew { 
+        background-image: url(./../../assets/crew/background-crew-tablet.jpg);
+    }
+    .dotsNav { 
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -350px;
+        z-index: 200;
+
+    }
+    
+    
+    .outlet {
+        position: relative;
+        top: 150px;
+        height:fit-content;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 913px) {
+    .dotsNav { 
+        top: -300px;
+
+    }
+
+}
+@media screen and (max-width : 769px) {
+    .crew { 
+        background-image: url(./../../assets/crew/background-crew-mobile.jpg);
+    }
+    .dotsNav { 
+        top: -200px;
+
+    }
+    
+}
+
+@media screen and (max-width : 541px) {
+    .dotsNav { 
+        top: 100px;
+
+    }
+}
+@media screen and (max-width : 420px) {
+    .dotsNav { 
+        top: 0px;
+
+    }
+}
+
+@media screen and (max-width : 376px) {
+    .dotsNav { 
+        top: 100px;
+
+    }
+    
+}

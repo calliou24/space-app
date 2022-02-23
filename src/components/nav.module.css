@@ -1,0 +1,180 @@
+.nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    z-index: 100;
+    top: 30px;
+    transition: all .2s;
+}
+.nav::before{
+    position: absolute; 
+    content: '';
+    width:48%;
+    left: 8%;
+    height:1px;
+    z-index: 100;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+}
+
+.logoCont {
+    position:relative;
+    left: 25px;
+}
+
+.options { 
+    width:40%; 
+    border-radius: 2px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding:10px 50px;
+    position:absolute;  
+    display:grid;
+    place-items: center;
+    right: 0;
+}
+.options > ul  { 
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    list-style:none;
+    width:100%;
+}
+/* 
+.options > ul > li  { 
+
+ }  */
+.options > ul > li > a{
+    color: var(--white);
+    font-family: 'Barlow-light';
+    text-decoration: none;
+    font-size: 1rem;
+}
+.options > ul > li > a:visited{
+    color: var(--white);
+}   
+.options > ul > li > a > span{
+    font-family:"Barlow";
+    color: #FFFFFF;
+    margin: 0 4px;
+}
+
+
+.selected{ 
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+
+}
+
+.selected::after { 
+    position: absolute;
+    content:'';
+    margin: auto;
+    width: 150%;
+    height: 3px;
+    background-color:var(--white);
+    bottom:-25px ;
+    animation-name: animatedUnderline;
+    animation-duration:.2s;
+    transform-origin: center;
+    
+}
+
+
+#hamburger { 
+    display:none;
+    position: absolute;
+    right:40px;
+    top: 40px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    background:red;
+    
+}
+
+@media screen and (max-width: 1000px) { 
+    .nav {
+        top: 10px;
+    }
+    
+    .nav::before{
+        width:40%;
+        left: 8%;
+        height:1px;
+    }
+    .options { 
+        width: 50%;
+    }
+      
+    .options > ul > li > a > span{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width : 768px ) {
+    .nav { 
+        top :0;
+        z-index: 4000;
+        
+    }
+    .logoCont {
+        top:30px;   
+    }
+    .nav::before{
+        display: none;
+    }
+    .options { 
+        width: 50vw;
+        height: 100vh;
+        top: 0;
+        padding: 0 20px;
+        display: flex;
+    }
+    .options > ul{
+        position: absolute;
+        text-align: left;
+        padding: 0 ;
+        display: inline-block;
+        top: 60px;
+    }
+    .options > ul> li { 
+        text-align: left;
+        margin:30px 0 ;
+    }
+    
+    .selected{ 
+        display:inline-block;
+        width:90%;
+    }
+
+    .selected::after { 
+        width: 4px;
+        height: 100%;
+        top: -25px;
+        right:0;
+        animation-duration:.5s;
+        
+    }
+    #hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .options > ul > li > a > span{
+        display: inline-block;
+    }
+}
+
+@keyframes animatedUnderline {
+    0%{transform: scale(0);}
+    100%{ transform: scale(1);}
+    
+}

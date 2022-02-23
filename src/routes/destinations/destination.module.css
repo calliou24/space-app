@@ -1,0 +1,123 @@
+.destination {
+    background-image:url(../../assets/destination/background-destination-desktop.jpg);
+}
+
+.navCont {
+    width: 43%;
+    height: 10%;
+    right: 0;
+    top: 150px;
+    position:absolute;
+    z-index: 200;
+    transition: all .2s;
+    
+}
+.navDes{ 
+    position: absolute;
+    left: 0px;
+    font-size: .9rem;
+}
+
+.navDes > ul {  
+    padding: 0;
+    display: flex;
+    list-style: none;
+}   
+.navDes > ul > li  { 
+    padding: 0;
+    margin: 0 20px;
+}
+.navDes > ul > li > a { 
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Barlow-light';
+    text-transform: uppercase;
+
+}
+.navDes> ul > li > a:visited {
+    color: var(--white);
+ }
+
+
+
+
+.outlet {
+    color: white;
+    width: 100%;
+    height: fit-content;
+    margin :auto;
+    position: relative;
+    top: 40px;
+}
+
+@keyframes animatedUnderline {
+    0%{transform: scale(0);}
+    100%{ transform: scale(1);}
+    
+}
+@media screen and (max-width: 1000px) {
+    .destination { 
+        background-image: url(../../assets/destination/background-destination-tablet.jpg);
+    }
+    .navCont {
+        z-index: 2000;
+        top: 600px;
+        width: 100%;
+        position: relative;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navDes{ 
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .outlet {
+        top: 100px;
+    }
+    
+
+}
+
+@media screen and (max-width: 769px) {
+    .destination { 
+        background-image: url(../../assets/destination/background-destination-mobile.jpg);
+    }
+    .navCont {
+        top: 540px;
+    }
+    
+
+}
+@media screen and (max-width: 541px) {
+    .navCont {
+        top: 450px;
+    }
+
+}
+@media screen and (max-width: 415px) {
+    .navCont {
+        top: 400px;
+    }
+
+}
+
+
+@media screen and (max-width: 376px) {
+    .navCont {
+        top: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 281px) {
+    .navCont {
+        top: 300px;
+    }
+    
+}
+
+

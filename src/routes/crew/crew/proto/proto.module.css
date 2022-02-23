@@ -1,0 +1,167 @@
+.proto {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+.info {
+    width: 50%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: .9;
+
+}
+.info > .role {
+    font-size: 1.8rem;
+    font-family: 'Bellefair';
+    color: #fff5;
+
+} 
+.info > .name {
+    font-family: 'Bellefair';
+    font-size: 2.3rem;
+    font-weight: lighter;
+    color: var(--white);
+} 
+.info > .bio {
+    line-height: 1.5;
+    font-size: .8rem;
+    font-family: 'Barlow-regular';
+    text-align: left;
+    width:70%;
+    color: var(--secondColor);
+    
+} 
+.imageCont { 
+    height: 100%;
+    width: 50%;
+    display: grid;
+    place-items: center;
+    
+}
+
+.imageCont > img { 
+    object-fit: cover;
+    width: 70%;
+}
+
+@media screen and (max-width : 1000px){
+
+    .proto {
+        flex-direction: column;
+    }
+    .info {
+        width:70%;
+        text-align: center;
+    }
+    .info > .role {
+        text-align: center;
+    
+    } 
+    .info > .name {
+        text-align: center;
+    } 
+    .info > .bio {
+        text-align: center;
+        width:100%;
+    } 
+    .imageCont { 
+        position: relative;
+        top: 200px;
+        width:100%;
+        height: fit-content;
+        display:flex;
+        align-items: flex-end;
+        justify-content: center;
+    
+    }
+    
+    .imageCont > img { 
+        width:70%;
+    }
+    
+
+
+}
+@media screen and (max-width : 768px){
+
+    .proto {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .info {
+        width:100%;
+        text-align: center;
+    } 
+    .imageCont { 
+        position: relative;
+        top: 30px;
+        width:150%;
+        min-height: 600px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .imageCont > img { 
+        width:100%;
+    }
+    
+
+
+}
+@media screen and (max-width : 768px){
+
+    .proto {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .info {
+        width:100%;
+        text-align: center;
+    } 
+    .imageCont { 
+        position: relative;
+        top: 70px;
+        width:100%;
+        min-height: 600px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .imageCont > img { 
+        width:100%;
+    }
+    
+
+
+}
+
+
+@media screen and (max-width : 541px) {
+    
+    .imageCont { 
+        position: relative;
+        top: 0px;
+        margin: 170px 0 0 0;
+    
+    }
+}
+
+
+@media screen and (max-width : 300px) {
+    
+    .imageCont { 
+        margin: 30px auto;
+    
+    }
+}

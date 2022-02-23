@@ -1,0 +1,163 @@
+
+@font-face {
+  font-family: 'Barlow-regular';
+  src: local('Barlow'), url(./fonts/Barlow-Regular.ttf) format('truetype');
+  
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: local('Barlow'), url(./fonts/BarlowCondensed-Regular.ttf) format('truetype');
+  
+}
+@font-face {
+  font-family: 'Barlow-light';
+  src: local('Barlow'), url(./fonts/BarlowCondensed-ExtraLight.ttf) format('truetype');
+  
+}
+@font-face {
+  font-family: 'Bellefair';
+  src: local('Bellefair'), url(./fonts/Bellefair-Regular.ttf) format('truetype');
+
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+html {
+  overflow-x: hidden;
+}
+
+:root { 
+  --firstColor:#0B0D17;
+  --secondColor:#D0D6F9;
+  --white:#FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--firstColor);
+}
+
+.App {
+  max-width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+
+.nav-bar, .nav-bar-active {
+  display:none;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 30px;
+  top: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:100%;
+  transition: .3s;
+}
+
+.nav-bar {
+  background-image: url(./assets/shared/icon-close.svg);
+  display:relative;
+  right: 60%;
+
+}
+@media screen and (max-width : 400px  ){ 
+  .nav-bar {
+    background-image: url(./assets/shared/icon-close.svg);
+    display:relative;
+    right: 65%;
+  
+  }
+}
+.nav-bar-active {
+  background-image: url(./assets/shared/icon-hamburger.svg);
+}
+.page-title {
+  position:relative;
+  top: 50px;
+  left: 10%;
+  width:fit-content;
+  font-family: 'Barlow-light';
+  font-weight: lighter;
+  font-size: 1.8rem;
+  color: var(--white);    
+  user-select:none;
+}
+.page-title > span { 
+  color: #fff8;
+  margin: 0 10px 0 0;
+}
+
+.selected{ 
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+
+}
+
+.selected::after { 
+  position: absolute;
+  content:'';
+  margin: auto;
+  width: 150%;
+  height: 1px;
+  background-color:var(--white);
+  bottom:-15px ;
+  animation-name: animatedUnderline;
+  animation-duration:.2s;
+  transform-origin: center;
+  
+}
+
+
+@media screen and (max-width : 1000px ) { 
+  .page-title {
+    font-size: 1.2rem;
+    top: 100px;
+  
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+    .nav-bar, .nav-bar-active {
+      display:inline-block;
+  }
+
+}
+
+#landing { 
+  width: 100vw;
+  min-height: 100vh;
+  margin: auto;
+  position:absolute;
+  top: 0;
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: cover;
+}
+
+@media screen and (max-height: 7500px){
+
+  #landing { 
+    max-height: 150vh;
+  }
+
+}
+#menu {
+  transition: all .3s;
+}
+#active-menu { 
+  transition: all .3s;
+  transform: translateX(500px) ;
+}
