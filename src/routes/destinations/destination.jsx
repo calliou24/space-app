@@ -23,6 +23,7 @@ function Destination({data}) {
                   </ul>
                 </nav>
             </div>
+            
             <div  className={styles.outlet}>
               <Outlet/>
             </div>
