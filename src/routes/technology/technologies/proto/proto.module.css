@@ -6,24 +6,24 @@
 
 .titile {
     color: var(--secondColor);
-    font-size: .9rem;
+    font-size: 1rem;
     font-family: 'Barlow';
     font-weight: lighter;
     letter-spacing:2px;
 }
 .infoCont { 
-    width: 30%
+    width: 35%
 
 }
 
 .infoCont > .name { 
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: var(--white);
     font-family: 'Bellefair';
 }
 
 .infoCont > .description { 
-    font-size: .8rem;
+    font-size: 1rem;
     color: var(--secondColor);
     font-family: 'Barlow-regular';
     font-weight: lighter;

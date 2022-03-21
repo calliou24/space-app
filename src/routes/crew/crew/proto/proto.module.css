@@ -12,7 +12,7 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    line-height: .9;
+    line-height: 1.5;
 
 }
 .info > .role {
@@ -29,7 +29,7 @@
 } 
 .info > .bio {
     line-height: 1.5;
-    font-size: .8rem;
+    font-size: 1rem;
     font-family: 'Barlow-regular';
     text-align: left;
     width:70%;

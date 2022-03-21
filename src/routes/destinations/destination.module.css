@@ -15,17 +15,19 @@
 .navDes{ 
     position: absolute;
     left: 0px;
-    font-size: .9rem;
+    font-size: 1.2rem;
 }
 
 .navDes > ul {  
     padding: 0;
     display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+    padding: 0 15px;
     list-style: none;
 }   
 .navDes > ul > li  { 
     padding: 0;
-    margin: 0 20px;
 }
 .navDes > ul > li > a { 
     text-decoration: none;
@@ -94,7 +96,7 @@
 }
 @media screen and (max-width: 541px) {
     .navCont {
-        top: 450px;
+        top: 400px;
     }
 
 }

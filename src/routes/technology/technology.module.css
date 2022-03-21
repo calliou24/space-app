@@ -20,7 +20,6 @@
     width:80px;
     height:80px;
     border-radius:50% ;
-    outline: 1px solid #fff2;
     margin: 10px 0;
     display:grid;
     place-items: center;
@@ -57,6 +56,7 @@
     align-items: center;
     justify-content: center;
     color: #000 !important;
+    border-radius: 50%;
 }
 .selected::after{
     position: absolute;

@@ -33,8 +33,8 @@ ReactDOM.render(
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route path="/" element={<Home/>} />
-        <Route className={({isActive}) => isActive ? "selected" : undefined} path="crew" element={<Crew data={data.crew} />}>
+        <Route path="space-app/" element={<Home/>} />
+        <Route className={({isActive}) => isActive ? "selected" : undefined} path="space-app/crew" element={<Crew data={data.crew} />}>
 
           <Route path="DouglasHurley" element={<DouglasHurley data={data.crew[0]} />}/>
           <Route path="MarkShuttleworth" element={<MarkShuttleworth data={data.crew[1]} />}/>
@@ -42,7 +42,7 @@ ReactDOM.render(
           <Route path="AnoushehAnsari" element={<AnoushehAnsari data={data.crew[3]} />}/>
 
         </Route>
-        <Route path="destination" element={<Destination data={data.destinations} />} >
+        <Route path="space-app/destination" element={<Destination data={data.destinations} />} >
           
           <Route path="moon" element={<Moon data={data.destinations[0]} />}/>
           <Route path="mars" element={<Mars data={data.destinations[1]} />}/>
@@ -50,7 +50,7 @@ ReactDOM.render(
           <Route path="titan" element={<Titan data={data.destinations[3]} />}/>
 
         </Route>
-        <Route path="technology" element={<Technology data={data.technology} />} >
+        <Route path="space-app/technology" element={<Technology data={data.technology} />} >
 
           <Route path="Launchvehicle" element={<Launchvehicle data={data.technology[0]} />}/>
           <Route path="Spaceport" element={<Spaceport data={data.technology[1]} />}/>

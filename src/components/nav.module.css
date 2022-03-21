@@ -29,7 +29,7 @@
     border-radius: 2px;
     background: rgba(255,255,255,0.1);
     backdrop-filter: blur(10px);
-    padding:10px 50px;
+    padding:15px 55px;
     position:absolute;  
     display:grid;
     place-items: center;
@@ -50,7 +50,7 @@
     color: var(--white);
     font-family: 'Barlow-light';
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .options > ul > li > a:visited{
     color: var(--white);
@@ -58,7 +58,7 @@
 .options > ul > li > a > span{
     font-family:"Barlow";
     color: #FFFFFF;
-    margin: 0 4px;
+    margin: 0 4px;  
 }
 
 
@@ -78,7 +78,7 @@
     width: 150%;
     height: 3px;
     background-color:var(--white);
-    bottom:-25px ;
+    bottom:-30px ;
     animation-name: animatedUnderline;
     animation-duration:.2s;
     transform-origin: center;

@@ -33,11 +33,11 @@
 }
 
 .infoDestination > p {
-    font-size: .8rem;
+    font-size: 1rem;
     font-family: 'Barlow-regular';
-    text-align: left;
-    width:70%;
+    width:80%;
     color: var(--secondColor);
+    line-height: 1.5;
 }
 .infoDestination > .distanceAndTime {
     display: flex;
@@ -45,7 +45,7 @@
     justify-content: space-between;
     position: relative;
     top: 40px;
-    width: 70%;
+    width: 80%;
 }
 
 .distanceAndTime::after{ 
